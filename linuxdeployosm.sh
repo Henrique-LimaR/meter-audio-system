@@ -8,7 +8,7 @@ make clean -j1
 OSM_DESKTOP=OpenSoundMeter_$VERSION.desktop
 LINUXDEPLOYQT=linuxdeployqt-6-x86_64.AppImage
 
-if test -f "$LINUXDEPLOYQT"; then
+if( test -f "$LINUXDEPLOYQT"); then
   echo "$LINUXDEPLOYQT exist"
 else
    wget -c -nv "https://github.com/probonopd/linuxdeployqt/releases/download/6/linuxdeployqt-6-x86_64.AppImage"

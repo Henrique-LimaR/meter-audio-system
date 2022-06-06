@@ -321,7 +321,7 @@ void Union::calcVector(unsigned int count, chart::Source *primary) noexcept
                 coherenceWeight += std::abs((*it)->module(i));
             }
         }
-        if (m_operation == Avg) {
+        if (m_operation == Avg){
             a /= count;
             p /= count;
             m /= count;
